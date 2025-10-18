@@ -28,6 +28,12 @@ Cada modelo é treinado, avaliado com métricas quantitativas (PSNR, SSIM, MS-SS
 - TensorFlow 2.x
 - Keras Tuner
 - Optuna
+- Scikit-Image
+- OpenCV
+- Matplotlib
+- Pandas
+- TQDM
+- Recomendável GPU para treinamento dos modelos
 
 ## Estrutura de arquivos
 
