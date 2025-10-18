@@ -1,0 +1,12 @@
+Modelo,PSNR,SSIM,MS-SSIM,Tempo (s),Configuração Otimizada
+Convencional (Base),17668,0.5466,0.8675,0.2507,---
+Variacional (Base),15.0193,0.1373,0.4428,0.2656,---
+Redundância (Base),12.2808,0.0609,0.2114,0.27,---
+Convencional Otimizado (FINAL),20.7116,801,0.9359,0.2654,"filter_max: 64
+Batch Normalization
+kernel_regularizer=l2(1e-4)
+Conv2DTranspose
+Arquitetura assimétrica
+"
+Variacional Otimizado (FINAL),13.4047,0.0743,0.2615,0.28,"beta=0.01, L=128"
+Redundância Otimizado (FINAL),14.2196,0.0983,0.3329,0.2868,"l1_reg=1e-6, L=512"
