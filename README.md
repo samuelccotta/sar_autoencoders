@@ -34,23 +34,26 @@ Cada modelo é treinado, avaliado com métricas quantitativas (PSNR, SSIM, MS-SS
 - Pandas
 - TQDM
 - Recomendável GPU para treinamento dos modelos
+- OPENVino
 
 ## Estrutura de arquivos
 
 - `SAR-AE.ipynb` - Notebook com todo o código, explicações e visualizações
+- `datasets/` - Diretório onde deve conter as imagens do SARD2
 - `models/` - Diretório onde os modelos treinados são salvos
 - `plots/` - Gráficos gerados durante o treinamento e avaliação
 - `results/` - Métricas e arquivos de log dos experimentos
 
 ## Como usar
 
-1. Carregue os dados de imagens para a pasta a pasta dataset: https://www.kaggle.com/datasets/nikolasgegenava/sard-2-search-and-rescue-dataset-extra-classes
+1. Carregue os dados de imagens para a pasta a pasta datasets: https://www.kaggle.com/datasets/nikolasgegenava/sard-2-search-and-rescue-dataset-extra-classes
 2. Execute as células para pré-processamento.
 3. Configure e treine o modelo desejado (Convencional, Variacional, Redundância).
 4. Avalie os resultados com as métricas implementadas.
 5. Utilize os gráficos e logs para análise do desempenho.
 6. Caso queira otimizar hiperparâmetros, execute a rotina de tuning.
 7. Salve os melhores modelos para uso futuro.
+8. A conversão para onxx e a simulação de edge pode ser usada para testes simulados
 
 ## Métricas de avaliação
 
