@@ -63,7 +63,12 @@ Cada modelo é treinado, avaliado com métricas quantitativas (PSNR, SSIM, MS-SS
 - **Tempo de inferência:** desempenho e eficiência do modelo.
 
 ## Futuras melhorias
+- Comparar modelos otimizados com baselines clássicas de compressão (JPEG e JPEG2000) para quantificar ganhos reais da compressão aprendida.
+- Traçar curvas taxa-distorção (RD) e BD-Rate em diferentes bitrates e resoluções (256×256, 512×512), comparando com JPEG/JPEG2000 e baselines neurais da literatura, mantendo foco na latência.
+- Avaliar o uso de funções de perda mais avançadas como SSIM-MSE combinada.
+- Explorar outros modelos de autoencoders, como Autoencoder Esparso (SAE) e Autoencoder Contrativo (CAE).
+- Realizar testes em ambientes operacionais reais de borda, avaliando impacto da latência de transmissão no desempenho.
+- Verificar impacto na redução de energia e explorar abordagens mistas/auto adaptativas para robustez em campo.
+- Avaliar qualidade perceptual (ex.: Mean Opinion Score - MOS, métricas perceptuais) para complementar PSNR/SSIM em compressões extremas.
 
-- Uso de funções de perda mais avançadas como SSIM-MSE combinada.
-- Arquitetura de autoencoder assimétrico com maior capacidade de extração.
-- Integração com frameworks específicos para deploy em dispositivos embutidos.
+- 
